@@ -29,7 +29,7 @@ h3 {
 .connect_content {
     width: 340px;
     height: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.653);
+    /* border: 1px solid rgba(255, 255, 255, 0.653); */
     border-radius: 20px;
     filter: drop-shadow(9px 7px 10px rgba(255, 255, 255, 0.341));
 }
@@ -42,7 +42,7 @@ h3 {
 .connect_message {
     width: 400px;
     height: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.653);
+    /* border: 1px solid rgba(255, 255, 255, 0.653); */
     border-radius: 20px;
     filter: drop-shadow(9px 7px 10px rgba(255, 255, 255, 0.341));
 }
@@ -107,4 +107,11 @@ h3 {
     border: 1px solid white;
     border-radius: 20px;
     margin: 10px 10px 0 105px;
+}
+
+.button a:hover {
+    background-color: rgba(255, 255, 255, 0.522);
+    color: black;
+    transform: scale(1.1);
+    transition: .3s;
 }
