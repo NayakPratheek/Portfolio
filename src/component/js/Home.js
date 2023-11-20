@@ -5,29 +5,29 @@ import About from "./About";
 import Skills from "./Skills";
 import Project from "./Project";
 import Connect from "./Connect";
-import Typed from "typed.js";
+// import Typed from "typed.js";
 
 function Home() {
-  const el = React.useRef(null);
+  // const el = React.useRef(null);
 
-  React.useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: [
-        "<i>Web Developer</i>💻",
-        "<i>Web Designer</i>✍🏼",
-        "<i>Photographer</i>📷",
-        "<i>Videographer</i>🤳🏼",
-        "<i>Video Editor</i>🎞️",
-      ],
-      typeSpeed: 89,
-      backSpeed: 20,
-      loop: {},
-    });
+  // React.useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: [
+  //       "<i>Web Developer</i>💻",
+  //       "<i>Web Designer</i>✍🏼",
+  //       "<i>Photographer</i>📷",
+  //       "<i>Videographer</i>🤳🏼",
+  //       "<i>Video Editor</i>🎞️",
+  //     ],
+  //     typeSpeed: 89,
+  //     backSpeed: 20,
+  //     loop: {},
+  //   });
 
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
   return (
     <>
       <section class="home">
@@ -37,7 +37,7 @@ function Home() {
             <i>Pratheek Nayak</i>
           </span>
           <div>I am a Computer Science Engineer and I am a passionate</div>
-          <span ref={el}></span>
+          {/* <span ref={el}></span> */}
           <div className="social">
             <div className="insta">
               <a href="https://www.instagram.com/nayak_pratheek_/" target="_blank">

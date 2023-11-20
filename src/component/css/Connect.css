@@ -94,13 +94,22 @@ h3 {
     color: white;
 }
 
+.message textarea {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 10px 10px 105px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+}
+
 .button {
     margin: 20px;
 }
 
-.button a {
+.button input {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     font-size: 18px;
     text-align: center;
@@ -109,9 +118,9 @@ h3 {
     margin: 10px 10px 0 105px;
 }
 
-.button a:hover {
+.button input:hover {
     background-color: rgba(255, 255, 255, 0.522);
-    color: black;
+    color: rgb(255, 255, 255);
     transform: scale(1.1);
     transition: .3s;
 }

@@ -1,7 +1,25 @@
 import '../css/Connect.css';
-
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Connect() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_b26jz4e', 'template_0lqq88p', form.current, 'WyBjUeQ-vwvMVNQ1X')
+            .then((result) => {
+                alert("Message sent!");
+                form.current.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+    // var df = function () {
+    //     alert("Message sent!")
+    // }
+
     return (
         <>
             <div className='connect_me'>
@@ -44,24 +62,32 @@ function Connect() {
                         </div>
                     </div>
                     <div className='connect_message'>
-                        <div className='leave'><h3>Ping me here 📌</h3></div>
-                        <div className='cont'>
-                            <div className='name'>
-                                <input type='text' placeholder='Enter your name'></input>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className='leave'><h3>Ping me here 📌</h3></div>
+                            <div className='cont'>
+                                <div className='name'>
+                                    <input type='text' placeholder='Enter your name' name='user-name'></input>
+                                </div>
+                                <div className='email'>
+                                    <input type='email' placeholder='Enter your mail' name='user-mail'></input>
+                                </div>
+                                <div className='phone'>
+                                    <input type='tel' placeholder='Enter your phone number' name='user-phone'></input>
+                                </div>
+                                <div className='message' >
+                                    <textarea
+                                        placeholder="Drop your message here!"
+                                        id=""
+                                        cols="0"
+                                        rows="7"
+                                        name='user-message' ></textarea>
+                                </div>
+                                <div className='button'>
+                                    <input type="submit" value="Send Message📩" />
+                                </div>
                             </div>
-                            <div className='email'>
-                                <input type='email' placeholder='Enter your mail'></input>
-                            </div>
-                            <div className='phone'>
-                                <input type='number' placeholder='Enter your phone number'></input>
-                            </div>
-                            {/* <div className='message'>
-                                <input type='' placeholder='Enter your phone number'></input>
-                            </div> */}
-                            <div className='button'>
-                                <a href='0'>Send Message 📩</a>
-                            </div>
-                        </div>
+                        </form>
+
 
                     </div>
                 </div>
