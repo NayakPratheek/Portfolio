@@ -10,7 +10,7 @@ import { TypeAnimation } from 'react-type-animation';
 function Home() {
   return (
     <>
-      <section class="home">
+      <div class="home">
         <div class="left">
           Hi👋. I am{" "}
           <span>
@@ -71,7 +71,7 @@ function Home() {
         <div class="right">
           <img src={gif} alt=""></img>
         </div>
-      </section>
+      </div>
       <About />
       <Skills />
       <Project />

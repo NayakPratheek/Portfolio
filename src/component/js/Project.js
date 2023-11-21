@@ -4,6 +4,8 @@ import code from '../images/code.jpg'
 import { Link } from "react-router-dom";
 
 function Project() {
+
+
     return (
         <>
             <div className="project">
@@ -22,13 +24,6 @@ function Project() {
                         <div className="content">
                             <h3>Live Code Editor</h3>
                             <a href="https://code-editorlive.netlify.app/" target="_blank">Visit site &#10064;</a>
-                        </div>
-                    </div>
-                    <div className="pro3">
-                        <img src={code} alt="project3"></img>
-                        <div className="content">
-                            <h3>Project3</h3>
-                            <a href="" target="_blank">Visit site &#10064;</a>
                         </div>
                     </div>
 

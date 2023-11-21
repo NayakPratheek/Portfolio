@@ -1,24 +1,24 @@
 import '../css/Connect.css';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import Loader from './Loader';
 function Connect() {
+    const [loader, setLoader] = useState(true)
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoader(false);
 
         emailjs.sendForm('service_b26jz4e', 'template_0lqq88p', form.current, 'WyBjUeQ-vwvMVNQ1X')
             .then((result) => {
                 alert("Message sent!");
+                setLoader(true);
                 form.current.reset();
             }, (error) => {
                 console.log(error.text);
             });
     };
-    // var df = function () {
-    //     alert("Message sent!")
-    // }
 
     return (
         <>
@@ -82,16 +82,23 @@ function Connect() {
                                         rows="7"
                                         name='user-message' ></textarea>
                                 </div>
-                                <div className='button'>
-                                    <input type="submit" value="Send Message📩" />
-                                </div>
+                                {
+                                    loader ?
+                                        <>
+                                            <div className='button'>
+                                                <input type="submit" value="Send Message📩" />
+                                            </div>
+                                        </>
+                                        :
+                                        <Loader />
+                                }
                             </div>
                         </form>
 
 
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
             <div class="footer">
                 <div className='foot1'>
                     <h2><span><i>Pratheek Nayak</i></span></h2>
