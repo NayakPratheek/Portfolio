@@ -21,8 +21,8 @@ function Skills() {
   return (
     <>
       <div className="skills">
-        <h1>Skills</h1>
-        <h3>My skills💡</h3>
+        <h1>Skills💡</h1>
+        <h3>Languages/Tools</h3>
         <div class="sk">
           <div class="flex col txt-center">
             <img src={html} alt="html" class="ski"></img>

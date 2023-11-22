@@ -1,17 +1,25 @@
-import '../css/Project.css'
-
-
-function Card({ Project }) {
+import musicbee from '../images/musicbee.png'
+import code from '..//images/code.jpg'
+import '../css/Card.css'
+function Card({ pro }) {
+    const img = (value) => {
+        if (value === 'm') {
+            return musicbee;
+        }
+        if (value === 'c') {
+            return code;
+        }
+    }
     return (
         <>
-            <img src={Project.i}></img>
-            <div className='content'>
-                <h3>{Project.h}</h3>
-                <a>{Project.a}</a>
+            <div className='poj'>
+                <img src={img(pro.i)}></img>
+                <div className='content'>
+                    <h2>{pro.h}</h2>
+                    <a href={pro.a} target='blank'>View Website</a>
+                </div>
             </div>
-
         </>
     );
-
 }
 export default Card;

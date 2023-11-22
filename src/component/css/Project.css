@@ -33,16 +33,16 @@
 }
 
 
-.pro1 img {
+/* .pro1 img {
     position: relative;
     width: 300px;
     height: 350px;
     border-radius: 20px;
     box-shadow: (10px 10px 10px solid rgba(255, 255, 255, 0.455));
     margin: 10px;
-}
+} */
 
-.content {
+/* .content {
     width: 300px;
     text-align: center;
     margin-bottom: 20px;
@@ -65,10 +65,10 @@
     color: black;
     background-color: white;
     transition: 0.3s;
-}
+} */
 
 
-.pro2 img {
+/* .pro2 img {
     width: 300px;
     height: 350px;
     border-radius: 20px;
@@ -104,7 +104,7 @@
     opacity: 0.5;
     transform: scale(1.03);
     transition: 0.3s;
-}
+} */
 
 /* @media (max-width:480px) {
     .project {

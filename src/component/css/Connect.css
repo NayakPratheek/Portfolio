@@ -28,7 +28,7 @@ h3 {
     width: 340px;
     height: 300px;
     border-radius: 20px;
-    box-shadow: (9px 7px 10px rgba(255, 255, 255, 0.341));
+    filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 0.41));
 }
 
 .connect_content .cont {
@@ -142,4 +142,8 @@ h3 {
 
 .foot1 {
     margin: 10px;
+}
+
+.foot2 .social {
+    filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 0.41));
 }

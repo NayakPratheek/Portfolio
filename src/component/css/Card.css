@@ -1,0 +1,41 @@
+.poj img {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: (10px 10px 10px solid rgba(255, 255, 255, 0.455));
+    margin: 10px;
+}
+
+.poj img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.content {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(17, 22, 108);
+}
+
+.content a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}

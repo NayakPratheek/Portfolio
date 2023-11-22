@@ -5,7 +5,6 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [loc, setLoc] = useState('/')
   const location = useLocation();
-  // const loc = location.pathname;
   useEffect(() => {
     setLoc(location.pathname);
   }, [location])
