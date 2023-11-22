@@ -34,11 +34,6 @@ function Navbar() {
               Skills
             </Link>
           </li>
-          {/* <li>
-            <Link to="/qualifications" className="media">
-              Qualifications
-            </Link>
-          </li> */}
           <li>
             <Link to="/projects" className="media">
               Projects
@@ -83,30 +78,22 @@ function Navbar() {
                     <Link to="/skills" onClick={() => hamb(false)}>Skills</Link>
                   </li>
               }
-              {/* {
-                loc === "/qualifications" ?
+              {
+                loc === "/projects" ?
                   ""
                   :
                   <li>
-                    <Link to="/qualifications" onClick={() => hamb(false)}>Qualifications</Link>
+                    <Link to="/projects" onClick={() => hamb(false)}>Projects</Link>
+                  </li>
+              }
+              {/* {
+                loc === "/contact" ?
+                  ""
+                  :
+                  <li>
+                    <Link to="/connect" onClick={() => hamb(false)}>Connect</Link>
                   </li>
               } */}
-              {
-                loc === "/project" ?
-                  ""
-                  :
-                  <li>
-                    <Link to="/project" onClick={() => hamb(false)}>Projects</Link>
-                  </li>
-              }
-              {
-                loc === "/skills" ?
-                  ""
-                  :
-                  <li>
-                    <Link to="/skills" onClick={() => hamb(false)}>Connect</Link>
-                  </li>
-              }
             </ul>
           </>
           :
