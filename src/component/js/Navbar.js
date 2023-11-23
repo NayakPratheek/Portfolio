@@ -60,7 +60,7 @@ function Navbar() {
                   <li>
                     <Link to="/" onClick={() => hamb(false)}>Home</Link>
                   </li>
-              }
+              }<hr></hr>
               {
                 loc === "/about" ?
                   ""
