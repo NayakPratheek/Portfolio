@@ -60,7 +60,13 @@
 }
 
 .ext {
-    margin: 30px 0px;
+    margin: 30px 0px 0px 200px;
+}
+
+@media (max-width:615px) {
+    .ext {
+        margin: 30px 0 0 150px;
+    }
 }
 
 .ext a {
@@ -97,9 +103,21 @@
     }
 }
 
-@media (max-width:57px) {
+@media (max-width:570px) {
     .picture img {
         width: 200px;
+    }
+}
+
+@media (max-width:425px) {
+    .ext {
+        margin: 30px 0 0 100px;
+    }
+}
+
+@media (max-width:320px) {
+    .ext {
+        margin: 30px 0px 0px 60px;
     }
 }
 
