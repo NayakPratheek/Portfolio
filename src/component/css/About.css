@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 80%;
+    /* width: 80%; */
     height: auto;
     margin: auto;
 }
@@ -107,6 +107,7 @@
     .info {
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
 
     .picture img {
@@ -122,6 +123,7 @@
 
     .info {
         font-size: 0.8rem;
+        width: 80%;
     }
 
     #cv {
