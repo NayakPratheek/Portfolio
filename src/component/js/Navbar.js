@@ -68,7 +68,7 @@ function Navbar() {
                   <li>
                     <Link to="/about" onClick={() => hamb(false)}>About</Link>
                   </li>
-              }
+              }<hr></hr>
               {
                 loc === "/skills" ?
                   ""
@@ -76,7 +76,7 @@ function Navbar() {
                   <li>
                     <Link to="/skills" onClick={() => hamb(false)}>Skills</Link>
                   </li>
-              }
+              }<hr></hr>
               {
                 loc === "/projects" ?
                   ""
@@ -84,7 +84,7 @@ function Navbar() {
                   <li>
                     <Link to="/projects" onClick={() => hamb(false)}>Projects</Link>
                   </li>
-              }
+              }<hr></hr>
               {/* {
                 loc === "/contact" ?
                   ""

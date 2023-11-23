@@ -62,12 +62,16 @@ nav h2 a:hover {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     background-color: rgba(11, 3, 53, 0.315);
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 15px;
+}
+
+hr {
+    color: rgba(255, 255, 255, 0.308);
 }
 
 .sidebar li {
