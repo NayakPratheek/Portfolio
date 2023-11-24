@@ -2,6 +2,7 @@ import React from "react";
 import profile from "../images/profile.jpeg";
 import "../css/About.css";
 // import Home from "./Home";
+import resume from '../images/resume.pdf';
 
 
 function About() {
@@ -38,7 +39,7 @@ function About() {
               </div>
             </div>
             <div class="ext">
-              <a href="0"> Download CV</a>
+              <a href={resume} download> Download CV</a>
             </div>
           </div>
         </section>
