@@ -1,5 +1,6 @@
 import musicbee from '../images/musicbee.png'
 import code from '..//images/code.jpg'
+import hh1 from '../images/hh1.png'
 import '../css/Card.css'
 function Card({ pro }) {
     const img = (value) => {
@@ -8,6 +9,9 @@ function Card({ pro }) {
         }
         if (value === 'c') {
             return code;
+        }
+        if (value === 'h') {
+            return hh1;
         }
     }
     return (

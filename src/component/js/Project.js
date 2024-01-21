@@ -1,6 +1,7 @@
 import "../css/Project.css";
 import musicbee from '../images/musicbee.png'
 import code from '../images/code.jpg'
+import hh1 from '../images/hh1.png'
 import { Link } from "react-router-dom";
 import Card from "./Card";
 
@@ -17,6 +18,12 @@ function Project() {
             i: 'c',
             h: "Live Code Editor",
             a: "https://code-editorlive.netlify.app/"
+        },
+        {
+            id: 3,
+            i: 'h',
+            h: "Helping Hands",
+            a: "https://helping-hands-kappa.vercel.app/"
         }
     ]
 
