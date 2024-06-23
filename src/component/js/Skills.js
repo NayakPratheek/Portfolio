@@ -14,6 +14,7 @@ import pro from '../images/pr.png'
 import git from '../images/git.png'
 import github from '../images/github.png'
 import vscode from '../images/vs.png'
+import ocv from '../images/ocv.png'
 
 
 
@@ -39,6 +40,10 @@ function Skills() {
           <div class="flex col txt-center">
             <img src={react} alt="react" class="ski"></img>
             <p>React js</p>
+          </div>
+          <div class="flex col txt-center">
+            <img src={ocv} alt="opencv" class="ski"></img>
+            <p>OpenCV</p>
           </div>
           <div class="flex col txt-center">
             <img src={bootstrap} class="ski"></img>
