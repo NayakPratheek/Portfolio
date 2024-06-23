@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../images/profile.jpeg";
 import "../css/About.css";
 // import Home from "./Home";
-import resume from '../images/resume.pdf';
+import resume from '../images/resume2.pdf';
 
 
 function About() {
@@ -26,11 +26,11 @@ function About() {
             landscape of the IT industry.
             <div class="extras">
               <div class="mark">
-                <h5 class="p1">7.9+</h5>
-                <div>CGPA</div>
+                <h5 class="p1">7.86</h5>
+                <div>CGPA (upto 5 semesters)</div>
               </div>
               <div class="projects">
-                <h5 class="p1">02</h5>
+                <h5 class="p1">05+</h5>
                 <div>Projects</div>
               </div>
               <div class="exp">
@@ -39,7 +39,7 @@ function About() {
               </div>
             </div>
             <div class="ext">
-              <a href={resume} download> Download CV</a>
+              <a href={resume} _blank> View Resume</a>
             </div>
           </div>
         </section>
