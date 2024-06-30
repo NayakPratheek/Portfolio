@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Navbar from "./component/js/Navbar.js";
-import Home from "./component/js/Home.js";
-import About from "./component/js/About.js";
-import Skills from "./component/js/Skills.js";
-import Project from "./component/js/Project.js";
-import Connect from "./component/js/Connect.js";
+import Navbar from "./component/js/Navbar.jsx";
+import Home from "./component/js/Home.jsx";
+import About from "./component/js/About.jsx";
+import Skills from "./component/js/Skills.jsx";
+import Project from "./component/js/Project.jsx";
+import Connect from "./component/js/Connect.jsx";
 function App() {
   return (
     <>
